@@ -10,7 +10,6 @@ target 'KkChat' do
   pod 'AFNetworking', '~> 4.0'
   pod 'MJExtension'
   pod 'SVProgressHUD'
-  pod 'YYModel'
   pod 'ReactiveObjC'
   pod "SDWebImage"
   pod 'YYKit'
