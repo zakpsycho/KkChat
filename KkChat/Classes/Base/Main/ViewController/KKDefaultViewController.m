@@ -86,19 +86,15 @@
 -(void)createTabbarVc{
     KKChatViewController *chatVc = [[KKChatViewController alloc] init];
     [self addTheChildVc:chatVc title:@"k信" imageName:@"1" selectedImageName:@"1"];
-//    [self addChildViewController:chatVc];
     
     KKAddressBookViewController *addressBookVc = [[KKAddressBookViewController alloc] init];
     [self addTheChildVc:addressBookVc title:@"通讯录" imageName:@"1" selectedImageName:@"1"];
-//    [self addChildViewController:addressBookVc];
     
     KKCircleFriendViewController *circleFriendVc =[[KKCircleFriendViewController alloc] init];
     [self addTheChildVc:circleFriendVc title:@"发现" imageName:@"1" selectedImageName:@"1"];
-//    [self addChildViewController:circleFriendVc];
     
     KKMineViewController *mineVc = [[KKMineViewController alloc] init];
     [self addTheChildVc:mineVc title:@"我" imageName:@"1" selectedImageName:@"1"];
-//    [self addChildViewController:mineVc];
 }
 
 @end

@@ -13,10 +13,14 @@
 @end
 
 @implementation AppDelegate
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+  
     [self setRootViewController];
+    
     return YES;
 }
+
 #pragma mark - 设置根视图
 -(void)setRootViewController{
     CGRect bounds = [UIScreen mainScreen].bounds;

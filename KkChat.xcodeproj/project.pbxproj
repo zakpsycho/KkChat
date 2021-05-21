@@ -130,9 +130,6 @@
 			children = (
 				B561F29A26577422002DA3A7 /* Classes */,
 				B561F2EF2657884C002DA3A7 /* SupportingFiles */,
-				B561F25626576EEA002DA3A7 /* AppDelegate.h */,
-				B561F25726576EEA002DA3A7 /* AppDelegate.m */,
-				B561F26826576EED002DA3A7 /* main.m */,
 			);
 			path = KkChat;
 			sourceTree = "<group>";
@@ -235,6 +232,7 @@
 		B561F2B826577A63002DA3A7 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				B561F30E26579810002DA3A7 /* AppDelegate */,
 				B561F2BB26577AA4002DA3A7 /* Model */,
 				B561F2BA26577A9F002DA3A7 /* View */,
 				B561F2B926577A8D002DA3A7 /* ViewController */,
@@ -360,12 +358,22 @@
 		B561F2EF2657884C002DA3A7 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				B561F2EB265786CA002DA3A7 /* PrefixHeader.pch */,
 				B561F26226576EED002DA3A7 /* Assets.xcassets */,
 				B561F26426576EED002DA3A7 /* LaunchScreen.storyboard */,
 				B561F26726576EED002DA3A7 /* Info.plist */,
-				B561F2EB265786CA002DA3A7 /* PrefixHeader.pch */,
+				B561F26826576EED002DA3A7 /* main.m */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		B561F30E26579810002DA3A7 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				B561F25626576EEA002DA3A7 /* AppDelegate.h */,
+				B561F25726576EEA002DA3A7 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
 			sourceTree = "<group>";
 		};
 		BB1D92394829D6073B2D27A3 /* Pods */ = {
