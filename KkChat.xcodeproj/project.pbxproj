@@ -3,19 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		B561F25826576EEA002DA3A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B561F25726576EEA002DA3A7 /* AppDelegate.m */; };
-		B561F25B26576EEA002DA3A7 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B561F25A26576EEA002DA3A7 /* SceneDelegate.m */; };
-		B561F25E26576EEA002DA3A7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B561F25D26576EEA002DA3A7 /* ViewController.m */; };
-		B561F26126576EEA002DA3A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B561F25F26576EEA002DA3A7 /* Main.storyboard */; };
 		B561F26326576EED002DA3A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B561F26226576EED002DA3A7 /* Assets.xcassets */; };
 		B561F26626576EED002DA3A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B561F26426576EED002DA3A7 /* LaunchScreen.storyboard */; };
 		B561F26926576EED002DA3A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B561F26826576EED002DA3A7 /* main.m */; };
 		B561F27326576EED002DA3A7 /* KkChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B561F27226576EED002DA3A7 /* KkChatTests.m */; };
 		B561F27E26576EED002DA3A7 /* KkChatUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B561F27D26576EED002DA3A7 /* KkChatUITests.m */; };
+		B561F2BE26577B37002DA3A7 /* KKDefaultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B561F2BD26577B37002DA3A7 /* KKDefaultViewController.m */; };
+		B561F2D326577C36002DA3A7 /* KKChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B561F2D226577C36002DA3A7 /* KKChatViewController.m */; };
+		B561F2D926577C5B002DA3A7 /* KKAddressBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B561F2D826577C5B002DA3A7 /* KKAddressBookViewController.m */; };
+		B561F2DF26577C8E002DA3A7 /* KKCircleFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B561F2DE26577C8E002DA3A7 /* KKCircleFriendViewController.m */; };
+		B561F2E526577CC2002DA3A7 /* KKMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B561F2E426577CC2002DA3A7 /* KKMineViewController.m */; };
+		BD5E614EBBC920A7CB77C622 /* Pods_KkChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C4C52FC0E00E7A83D547B21 /* Pods_KkChat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,14 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C4C52FC0E00E7A83D547B21 /* Pods_KkChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KkChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3996A675EBBFC0B470C1A0E /* Pods-KkChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KkChat.release.xcconfig"; path = "Target Support Files/Pods-KkChat/Pods-KkChat.release.xcconfig"; sourceTree = "<group>"; };
 		B561F25326576EEA002DA3A7 /* KkChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KkChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B561F25626576EEA002DA3A7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B561F25726576EEA002DA3A7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B561F25926576EEA002DA3A7 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		B561F25A26576EEA002DA3A7 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		B561F25C26576EEA002DA3A7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B561F25D26576EEA002DA3A7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		B561F26026576EEA002DA3A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B561F26226576EED002DA3A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B561F26526576EED002DA3A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B561F26726576EED002DA3A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +54,19 @@
 		B561F27926576EED002DA3A7 /* KkChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KkChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B561F27D26576EED002DA3A7 /* KkChatUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KkChatUITests.m; sourceTree = "<group>"; };
 		B561F27F26576EED002DA3A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B561F2BC26577B37002DA3A7 /* KKDefaultViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKDefaultViewController.h; sourceTree = "<group>"; };
+		B561F2BD26577B37002DA3A7 /* KKDefaultViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKDefaultViewController.m; sourceTree = "<group>"; };
+		B561F2D126577C36002DA3A7 /* KKChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKChatViewController.h; sourceTree = "<group>"; };
+		B561F2D226577C36002DA3A7 /* KKChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKChatViewController.m; sourceTree = "<group>"; };
+		B561F2D726577C5B002DA3A7 /* KKAddressBookViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKAddressBookViewController.h; sourceTree = "<group>"; };
+		B561F2D826577C5B002DA3A7 /* KKAddressBookViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKAddressBookViewController.m; sourceTree = "<group>"; };
+		B561F2DD26577C8E002DA3A7 /* KKCircleFriendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKCircleFriendViewController.h; sourceTree = "<group>"; };
+		B561F2DE26577C8E002DA3A7 /* KKCircleFriendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKCircleFriendViewController.m; sourceTree = "<group>"; };
+		B561F2E326577CC2002DA3A7 /* KKMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKMineViewController.h; sourceTree = "<group>"; };
+		B561F2E426577CC2002DA3A7 /* KKMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKMineViewController.m; sourceTree = "<group>"; };
+		B561F2EA265786AD002DA3A7 /* DefineMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineMacro.h; sourceTree = "<group>"; };
+		B561F2EB265786CA002DA3A7 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		CFE4218F556BD5DFD2CA024D /* Pods-KkChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KkChat.debug.xcconfig"; path = "Target Support Files/Pods-KkChat/Pods-KkChat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD5E614EBBC920A7CB77C622 /* Pods_KkChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +95,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8769F7B8F75390721190926F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C4C52FC0E00E7A83D547B21 /* Pods_KkChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B561F24A26576EEA002DA3A7 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +110,8 @@
 				B561F27126576EED002DA3A7 /* KkChatTests */,
 				B561F27C26576EED002DA3A7 /* KkChatUITests */,
 				B561F25426576EEA002DA3A7 /* Products */,
+				BB1D92394829D6073B2D27A3 /* Pods */,
+				8769F7B8F75390721190926F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,16 +128,10 @@
 		B561F25526576EEA002DA3A7 /* KkChat */ = {
 			isa = PBXGroup;
 			children = (
+				B561F29A26577422002DA3A7 /* Classes */,
+				B561F2EF2657884C002DA3A7 /* SupportingFiles */,
 				B561F25626576EEA002DA3A7 /* AppDelegate.h */,
 				B561F25726576EEA002DA3A7 /* AppDelegate.m */,
-				B561F25926576EEA002DA3A7 /* SceneDelegate.h */,
-				B561F25A26576EEA002DA3A7 /* SceneDelegate.m */,
-				B561F25C26576EEA002DA3A7 /* ViewController.h */,
-				B561F25D26576EEA002DA3A7 /* ViewController.m */,
-				B561F25F26576EEA002DA3A7 /* Main.storyboard */,
-				B561F26226576EED002DA3A7 /* Assets.xcassets */,
-				B561F26426576EED002DA3A7 /* LaunchScreen.storyboard */,
-				B561F26726576EED002DA3A7 /* Info.plist */,
 				B561F26826576EED002DA3A7 /* main.m */,
 			);
 			path = KkChat;
@@ -137,6 +155,228 @@
 			path = KkChatUITests;
 			sourceTree = "<group>";
 		};
+		B561F29A26577422002DA3A7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B561F2B526577A3F002DA3A7 /* Base */,
+				B561F2B626577A49002DA3A7 /* Moduel */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B561F29B265775DB002DA3A7 /* Chat(聊天) */ = {
+			isa = PBXGroup;
+			children = (
+				B561F2C426577B51002DA3A7 /* Model */,
+				B561F2C326577B4C002DA3A7 /* View */,
+				B561F2C226577B42002DA3A7 /* ViewController */,
+			);
+			path = "Chat(聊天)";
+			sourceTree = "<group>";
+		};
+		B561F29C265775F8002DA3A7 /* Addressbook(通讯录) */ = {
+			isa = PBXGroup;
+			children = (
+				B561F2CB26577B8E002DA3A7 /* Model */,
+				B561F2CC26577B8E002DA3A7 /* View */,
+				B561F2CD26577B8E002DA3A7 /* ViewController */,
+			);
+			path = "Addressbook(通讯录)";
+			sourceTree = "<group>";
+		};
+		B561F29D26577624002DA3A7 /* Circleoffriends(朋友圈) */ = {
+			isa = PBXGroup;
+			children = (
+				B561F2C826577B85002DA3A7 /* Model */,
+				B561F2C926577B85002DA3A7 /* View */,
+				B561F2CA26577B85002DA3A7 /* ViewController */,
+			);
+			path = "Circleoffriends(朋友圈)";
+			sourceTree = "<group>";
+		};
+		B561F29E2657766C002DA3A7 /* Mine(我的) */ = {
+			isa = PBXGroup;
+			children = (
+				B561F2C526577B7F002DA3A7 /* Model */,
+				B561F2C726577B7F002DA3A7 /* View */,
+				B561F2C626577B7F002DA3A7 /* ViewController */,
+			);
+			path = "Mine(我的)";
+			sourceTree = "<group>";
+		};
+		B561F2B526577A3F002DA3A7 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B561F2B726577A59002DA3A7 /* Tools */,
+				B561F2B826577A63002DA3A7 /* Main */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		B561F2B626577A49002DA3A7 /* Moduel */ = {
+			isa = PBXGroup;
+			children = (
+				B561F29B265775DB002DA3A7 /* Chat(聊天) */,
+				B561F29C265775F8002DA3A7 /* Addressbook(通讯录) */,
+				B561F29D26577624002DA3A7 /* Circleoffriends(朋友圈) */,
+				B561F29E2657766C002DA3A7 /* Mine(我的) */,
+			);
+			path = Moduel;
+			sourceTree = "<group>";
+		};
+		B561F2B726577A59002DA3A7 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				B561F2EA265786AD002DA3A7 /* DefineMacro.h */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		B561F2B826577A63002DA3A7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B561F2BB26577AA4002DA3A7 /* Model */,
+				B561F2BA26577A9F002DA3A7 /* View */,
+				B561F2B926577A8D002DA3A7 /* ViewController */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B561F2B926577A8D002DA3A7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B561F2BC26577B37002DA3A7 /* KKDefaultViewController.h */,
+				B561F2BD26577B37002DA3A7 /* KKDefaultViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B561F2BA26577A9F002DA3A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B561F2BB26577AA4002DA3A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B561F2C226577B42002DA3A7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B561F2D126577C36002DA3A7 /* KKChatViewController.h */,
+				B561F2D226577C36002DA3A7 /* KKChatViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B561F2C326577B4C002DA3A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B561F2C426577B51002DA3A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B561F2C526577B7F002DA3A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B561F2C626577B7F002DA3A7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B561F2E326577CC2002DA3A7 /* KKMineViewController.h */,
+				B561F2E426577CC2002DA3A7 /* KKMineViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B561F2C726577B7F002DA3A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B561F2C826577B85002DA3A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B561F2C926577B85002DA3A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B561F2CA26577B85002DA3A7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B561F2DD26577C8E002DA3A7 /* KKCircleFriendViewController.h */,
+				B561F2DE26577C8E002DA3A7 /* KKCircleFriendViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B561F2CB26577B8E002DA3A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B561F2CC26577B8E002DA3A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B561F2CD26577B8E002DA3A7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B561F2D726577C5B002DA3A7 /* KKAddressBookViewController.h */,
+				B561F2D826577C5B002DA3A7 /* KKAddressBookViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B561F2EF2657884C002DA3A7 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				B561F26226576EED002DA3A7 /* Assets.xcassets */,
+				B561F26426576EED002DA3A7 /* LaunchScreen.storyboard */,
+				B561F26726576EED002DA3A7 /* Info.plist */,
+				B561F2EB265786CA002DA3A7 /* PrefixHeader.pch */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		BB1D92394829D6073B2D27A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CFE4218F556BD5DFD2CA024D /* Pods-KkChat.debug.xcconfig */,
+				A3996A675EBBFC0B470C1A0E /* Pods-KkChat.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +384,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B561F28226576EED002DA3A7 /* Build configuration list for PBXNativeTarget "KkChat" */;
 			buildPhases = (
+				45EFDF005F2C572AB682EAAC /* [CP] Check Pods Manifest.lock */,
 				B561F24F26576EEA002DA3A7 /* Sources */,
 				B561F25026576EEA002DA3A7 /* Frameworks */,
 				B561F25126576EEA002DA3A7 /* Resources */,
+				6E1CF454630C5D8EF68C71A4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -199,6 +441,7 @@
 		B561F24B26576EEA002DA3A7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = KK;
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
 					B561F25226576EEA002DA3A7 = {
@@ -241,7 +484,6 @@
 			files = (
 				B561F26626576EED002DA3A7 /* LaunchScreen.storyboard in Resources */,
 				B561F26326576EED002DA3A7 /* Assets.xcassets in Resources */,
-				B561F26126576EEA002DA3A7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,15 +503,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		45EFDF005F2C572AB682EAAC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KkChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E1CF454630C5D8EF68C71A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KkChat/Pods-KkChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KkChat/Pods-KkChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KkChat/Pods-KkChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B561F24F26576EEA002DA3A7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B561F25E26576EEA002DA3A7 /* ViewController.m in Sources */,
+				B561F2DF26577C8E002DA3A7 /* KKCircleFriendViewController.m in Sources */,
 				B561F25826576EEA002DA3A7 /* AppDelegate.m in Sources */,
+				B561F2D926577C5B002DA3A7 /* KKAddressBookViewController.m in Sources */,
 				B561F26926576EED002DA3A7 /* main.m in Sources */,
-				B561F25B26576EEA002DA3A7 /* SceneDelegate.m in Sources */,
+				B561F2D326577C36002DA3A7 /* KKChatViewController.m in Sources */,
+				B561F2E526577CC2002DA3A7 /* KKMineViewController.m in Sources */,
+				B561F2BE26577B37002DA3A7 /* KKDefaultViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,14 +592,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B561F25F26576EEA002DA3A7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B561F26026576EEA002DA3A7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B561F26426576EED002DA3A7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -438,16 +717,21 @@
 		};
 		B561F28326576EED002DA3A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFE4218F556BD5DFD2CA024D /* Pods-KkChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8LSL37D46J;
-				INFOPLIST_FILE = KkChat/Info.plist;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/KkChat/SupportingFiles/PrefixHeader.pch";
+				INFOPLIST_FILE = KkChat/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.KkChat.ios.free.KkChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -456,16 +740,21 @@
 		};
 		B561F28426576EED002DA3A7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3996A675EBBFC0B470C1A0E /* Pods-KkChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8LSL37D46J;
-				INFOPLIST_FILE = KkChat/Info.plist;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/KkChat/SupportingFiles/PrefixHeader.pch";
+				INFOPLIST_FILE = KkChat/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.KkChat.ios.free.KkChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
