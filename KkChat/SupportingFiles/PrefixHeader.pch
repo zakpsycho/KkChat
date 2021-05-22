@@ -1,0 +1,30 @@
+//
+//  PrefixHeader.pch
+//  KkChat
+//
+//  Created by 张安康 on 2021/5/21.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef __OBJC__
+#pragma mark - 通用类
+#import "AppDelegate.h"
+#import "KKDefaultViewController.h"
+
+#pragma mark - 工程配置类
+#import "DefineMacro.h"   //工程相关宏定义
+
+#pragma mark - 第三方SDK
+
+#import <AFNetworking/AFNetworking.h>
+#import <MJExtension/MJExtension.h>
+#import <Masonry/Masonry.h>
+#import <YYKit/YYKit.h>
+#import <SDWebImage/SDWebImage.h>
+
+#endif
+
+
+#endif /* PrefixHeader_pch */
