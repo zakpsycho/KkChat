@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B561F25826576EEA002DA3A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B561F25726576EEA002DA3A7 /* AppDelegate.m */; };
-		B561F26326576EED002DA3A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B561F26226576EED002DA3A7 /* Assets.xcassets */; };
 		B561F26626576EED002DA3A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B561F26426576EED002DA3A7 /* LaunchScreen.storyboard */; };
 		B561F26926576EED002DA3A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B561F26826576EED002DA3A7 /* main.m */; };
 		B561F27326576EED002DA3A7 /* KkChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B561F27226576EED002DA3A7 /* KkChatTests.m */; };
@@ -20,6 +19,13 @@
 		B561F2E526577CC2002DA3A7 /* KKMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B561F2E426577CC2002DA3A7 /* KKMineViewController.m */; };
 		B561F31C26579F56002DA3A7 /* KKAddressBookTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B561F31B26579F56002DA3A7 /* KKAddressBookTableViewCell.m */; };
 		B561F3272657B67F002DA3A7 /* KKAddressBookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B561F3262657B67F002DA3A7 /* KKAddressBookModel.m */; };
+		B561F3392657BC4B002DA3A7 /* KKMineHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B561F3382657BC4B002DA3A7 /* KKMineHeaderView.m */; };
+		B561F33F2657BC64002DA3A7 /* KKMineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B561F33E2657BC64002DA3A7 /* KKMineTableViewCell.m */; };
+		B59193BC265CE2D2001A7365 /* KKMineCellDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B59193BB265CE2D2001A7365 /* KKMineCellDataModel.m */; };
+		B59193C6265CF66B001A7365 /* KKFindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B59193C5265CF66B001A7365 /* KKFindViewController.m */; };
+		B59193CF265CF713001A7365 /* KKFindTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B59193CE265CF713001A7365 /* KKFindTableViewCell.m */; };
+		B59193D5265D0563001A7365 /* KKFindDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B59193D4265D0563001A7365 /* KKFindDataModel.m */; };
+		B59193DE265D143E001A7365 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B59193DD265D143E001A7365 /* Assets.xcassets */; };
 		BD5E614EBBC920A7CB77C622 /* Pods_KkChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C4C52FC0E00E7A83D547B21 /* Pods_KkChat.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,7 +52,6 @@
 		B561F25326576EEA002DA3A7 /* KkChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KkChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B561F25626576EEA002DA3A7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B561F25726576EEA002DA3A7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B561F26226576EED002DA3A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B561F26526576EED002DA3A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B561F26726576EED002DA3A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B561F26826576EED002DA3A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -72,6 +77,19 @@
 		B561F31B26579F56002DA3A7 /* KKAddressBookTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKAddressBookTableViewCell.m; sourceTree = "<group>"; };
 		B561F3252657B67F002DA3A7 /* KKAddressBookModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKAddressBookModel.h; sourceTree = "<group>"; };
 		B561F3262657B67F002DA3A7 /* KKAddressBookModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKAddressBookModel.m; sourceTree = "<group>"; };
+		B561F3372657BC4B002DA3A7 /* KKMineHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKMineHeaderView.h; sourceTree = "<group>"; };
+		B561F3382657BC4B002DA3A7 /* KKMineHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKMineHeaderView.m; sourceTree = "<group>"; };
+		B561F33D2657BC63002DA3A7 /* KKMineTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKMineTableViewCell.h; sourceTree = "<group>"; };
+		B561F33E2657BC64002DA3A7 /* KKMineTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKMineTableViewCell.m; sourceTree = "<group>"; };
+		B59193BA265CE2D2001A7365 /* KKMineCellDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKMineCellDataModel.h; sourceTree = "<group>"; };
+		B59193BB265CE2D2001A7365 /* KKMineCellDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKMineCellDataModel.m; sourceTree = "<group>"; };
+		B59193C4265CF66B001A7365 /* KKFindViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKFindViewController.h; sourceTree = "<group>"; };
+		B59193C5265CF66B001A7365 /* KKFindViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKFindViewController.m; sourceTree = "<group>"; };
+		B59193CD265CF713001A7365 /* KKFindTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKFindTableViewCell.h; sourceTree = "<group>"; };
+		B59193CE265CF713001A7365 /* KKFindTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKFindTableViewCell.m; sourceTree = "<group>"; };
+		B59193D3265D0563001A7365 /* KKFindDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKFindDataModel.h; sourceTree = "<group>"; };
+		B59193D4265D0563001A7365 /* KKFindDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKFindDataModel.m; sourceTree = "<group>"; };
+		B59193DD265D143E001A7365 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFE4218F556BD5DFD2CA024D /* Pods-KkChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KkChat.debug.xcconfig"; path = "Target Support Files/Pods-KkChat/Pods-KkChat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -219,9 +237,9 @@
 		B561F2B626577A49002DA3A7 /* Moduel */ = {
 			isa = PBXGroup;
 			children = (
+				B59193C0265CF622001A7365 /* Find(发现) */,
 				B561F29B265775DB002DA3A7 /* Chat(聊天) */,
 				B561F29C265775F8002DA3A7 /* Addressbook(通讯录) */,
-				B561F29D26577624002DA3A7 /* Circleoffriends(朋友圈) */,
 				B561F29E2657766C002DA3A7 /* Mine(我的) */,
 			);
 			path = Moduel;
@@ -295,6 +313,8 @@
 		B561F2C526577B7F002DA3A7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B59193BA265CE2D2001A7365 /* KKMineCellDataModel.h */,
+				B59193BB265CE2D2001A7365 /* KKMineCellDataModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -311,6 +331,10 @@
 		B561F2C726577B7F002DA3A7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B561F3372657BC4B002DA3A7 /* KKMineHeaderView.h */,
+				B561F3382657BC4B002DA3A7 /* KKMineHeaderView.m */,
+				B561F33D2657BC63002DA3A7 /* KKMineTableViewCell.h */,
+				B561F33E2657BC64002DA3A7 /* KKMineTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -368,9 +392,10 @@
 		B561F2EF2657884C002DA3A7 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				B5778900265CA023006EE104 /* FindImg */,
 				B561F3202657B1CC002DA3A7 /* AddressBookHeadImg */,
 				B561F2EB265786CA002DA3A7 /* PrefixHeader.pch */,
-				B561F26226576EED002DA3A7 /* Assets.xcassets */,
+				B59193DD265D143E001A7365 /* Assets.xcassets */,
 				B561F26426576EED002DA3A7 /* LaunchScreen.storyboard */,
 				B561F26726576EED002DA3A7 /* Info.plist */,
 				B561F26826576EED002DA3A7 /* main.m */,
@@ -392,6 +417,51 @@
 			children = (
 			);
 			path = AddressBookHeadImg;
+			sourceTree = "<group>";
+		};
+		B5778900265CA023006EE104 /* FindImg */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FindImg;
+			sourceTree = "<group>";
+		};
+		B59193C0265CF622001A7365 /* Find(发现) */ = {
+			isa = PBXGroup;
+			children = (
+				B59193C1265CF63C001A7365 /* Model */,
+				B59193C3265CF647001A7365 /* View */,
+				B59193C2265CF642001A7365 /* ViewController */,
+				B561F29D26577624002DA3A7 /* Circleoffriends(朋友圈) */,
+			);
+			path = "Find(发现)";
+			sourceTree = "<group>";
+		};
+		B59193C1265CF63C001A7365 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B59193D3265D0563001A7365 /* KKFindDataModel.h */,
+				B59193D4265D0563001A7365 /* KKFindDataModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B59193C2265CF642001A7365 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B59193C4265CF66B001A7365 /* KKFindViewController.h */,
+				B59193C5265CF66B001A7365 /* KKFindViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B59193C3265CF647001A7365 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B59193CD265CF713001A7365 /* KKFindTableViewCell.h */,
+				B59193CE265CF713001A7365 /* KKFindTableViewCell.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		BB1D92394829D6073B2D27A3 /* Pods */ = {
@@ -508,8 +578,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B59193DE265D143E001A7365 /* Assets.xcassets in Resources */,
 				B561F26626576EED002DA3A7 /* LaunchScreen.storyboard in Resources */,
-				B561F26326576EED002DA3A7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,9 +649,15 @@
 				B561F2DF26577C8E002DA3A7 /* KKCircleFriendViewController.m in Sources */,
 				B561F31C26579F56002DA3A7 /* KKAddressBookTableViewCell.m in Sources */,
 				B561F25826576EEA002DA3A7 /* AppDelegate.m in Sources */,
+				B59193D5265D0563001A7365 /* KKFindDataModel.m in Sources */,
 				B561F2D926577C5B002DA3A7 /* KKAddressBookViewController.m in Sources */,
 				B561F26926576EED002DA3A7 /* main.m in Sources */,
+				B59193C6265CF66B001A7365 /* KKFindViewController.m in Sources */,
+				B561F33F2657BC64002DA3A7 /* KKMineTableViewCell.m in Sources */,
+				B59193BC265CE2D2001A7365 /* KKMineCellDataModel.m in Sources */,
+				B59193CF265CF713001A7365 /* KKFindTableViewCell.m in Sources */,
 				B561F3272657B67F002DA3A7 /* KKAddressBookModel.m in Sources */,
+				B561F3392657BC4B002DA3A7 /* KKMineHeaderView.m in Sources */,
 				B561F2D326577C36002DA3A7 /* KKChatViewController.m in Sources */,
 				B561F2E526577CC2002DA3A7 /* KKMineViewController.m in Sources */,
 				B561F2BE26577B37002DA3A7 /* KKDefaultViewController.m in Sources */,

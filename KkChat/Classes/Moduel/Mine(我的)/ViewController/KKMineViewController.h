@@ -7,6 +7,8 @@
 
 #import <UIKit/UIKit.h>
 
+//视图类
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface KKMineViewController : UIViewController

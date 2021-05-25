@@ -23,6 +23,11 @@
     self.view.backgroundColor = [UIColor whiteColor];
     [self customView];
 }
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self.navigationController.navigationBar setShadowImage:[UIImage new]];
+    self.navigationController.navigationBar.barTintColor = RGBColorHex(f0f0f0);
+}
 #pragma mark - 填充UI
 -(void)customView{
     [self.view addSubview:self.tableView];
@@ -73,7 +78,7 @@
     };
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
-    return AdaptedWidth(20);
+    return AdaptedWidth(25);
 }
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     return [[UIView alloc] initWithFrame:CGRectZero];

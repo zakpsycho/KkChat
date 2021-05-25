@@ -1,56 +1,55 @@
 //
-//  KKMineViewController.m
+//  KKFindViewController.m
 //  KkChat
 //
-//  Created by 张安康 on 2021/5/21.
+//  Created by 张安康 on 2021/5/25.
 //
 
-#import "KKMineViewController.h"
-
-//数据类
-#import "KKMineCellDataModel.h"
+#import "KKFindViewController.h"
 
 //视图类
-#import "KKMineHeaderView.h"
-#import "KKMineTableViewCell.h"
+#import "KKFindTableViewCell.h"
 
-@interface KKMineViewController ()<UITableViewDelegate,UITableViewDataSource>
+//数据模型类
+#import "KKFindDataModel.h"
 
-@property (nonatomic, strong)KKMineHeaderView *headerView;
+@interface KKFindViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong)UITableView *tableView;
-@property (nonatomic, strong)NSArray <NSArray <KKMineCellDataModel *>*> *datasArray;
+@property (nonatomic, strong)NSArray <NSArray <KKFindDataModel *>*>*datasArray;
 
 @end
 
-@implementation KKMineViewController
+@implementation KKFindViewController
 
-#pragma mark - view生命周期
+#pragma mark - view的生命周期
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = KWhiteColor;
+    self.navigationItem.title = @"发现";
+    self.view.backgroundColor = RGBColorHex(f0f0f0);
     [self customView];
 }
--(void)viewWillAppear:(BOOL)animated{
+- (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    [self.navigationController.navigationBar setHidden:YES];
+    [self.navigationController.navigationBar setShadowImage:[UIImage new]];
+    self.navigationController.navigationBar.barTintColor = RGBColorHex(f0f0f0);
 }
+
 #pragma mark - 填充UI
 -(void)customView{
     [self.view addSubview:self.tableView];
     [self layoutSubview];
 }
-
 #pragma mark - 适配UI
--(void)layoutSubview{
+- (void)layoutSubview{
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(Status_Bar_Height());
+        make.top.mas_equalTo(Navigation_Bar_Height);
         make.left.mas_equalTo(0);
         make.bottom.mas_equalTo(0);
         make.right.mas_equalTo(0);
     }];
 }
 
-#pragma mark - 实现uitableviewDelegate && UItableviewDataSource
+#pragma mark - 实现UItableviewdelegate && UItableviewdatasource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return self.datasArray.count;
 }
@@ -59,67 +58,61 @@
     return item.count;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    KKMineTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:NSStringFromClass([KKMineTableViewCell class])];
+    KKFindTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:NSStringFromClass([KKFindTableViewCell class])];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     NSArray *item = self.datasArray[indexPath.section];
-    KKMineCellDataModel *cellModel = item[indexPath.row];
-    //取模型值
+    KKFindDataModel *cellModel =  item[indexPath.row];
+    //模型赋值
     cell.leftLabel.text = cellModel.leftLabel;
-    cell.leftImg.image = [UIImage imageNamed:cellModel.imgName];
+    cell.leftImg.image = [UIImage imageNamed:cellModel.leftImg];
+    cell.rightImg.image = [UIImage imageNamed:cellModel.rightImg];
+    if (indexPath.section == 0) {
+        cell.rightImg.hidden = NO;
+    }else{
+        cell.rightImg.hidden = YES;
+    }
     return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    //选中的cell响应点击事件
-    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return AdaptedWidth(46);
+    return AdaptedWidth(56);
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    if (section == 0) {
-        return AdaptedWidth(10);
-    }else{
-        return 0.01;
-    };
+    return 0.01;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
     return AdaptedWidth(10);
 }
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-    return [[UIView alloc] initWithFrame:CGRectZero];
+    return [UIView new];
 }
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
-    return [[UIView alloc] initWithFrame:CGRectZero];
+    return [UIView new];
 }
 
-#pragma mark - 懒加载
-- (KKMineHeaderView *)headerView{
-    if (!_headerView) {
-        _headerView = [[KKMineHeaderView alloc] initWithFrame:CGRectMake(0, 0, kScreenW, AdaptedWidth(150))];
-        _headerView.backgroundColor = KWhiteColor;
-    }
-    return _headerView;
-}
+#pragma mark - 实现懒加载
 - (UITableView *)tableView{
     if (!_tableView) {
         _tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-        _tableView.showsHorizontalScrollIndicator = NO;
         _tableView.showsVerticalScrollIndicator = NO;
-        _tableView.tableHeaderView = self.headerView;
+        _tableView.showsHorizontalScrollIndicator = NO;
         _tableView.backgroundColor = RGBColorHex(f0f0f0);
         //注册cell
-        [_tableView registerClass:[KKMineTableViewCell class] forCellReuseIdentifier:NSStringFromClass([KKMineTableViewCell class])];
+        [_tableView registerClass:[KKFindTableViewCell class] forCellReuseIdentifier:NSStringFromClass([KKFindTableViewCell class])];
     }
     return _tableView;
+    
 }
-- (NSArray<NSArray<KKMineCellDataModel *> *> *)datasArray{
+- (NSArray<NSArray<KKFindDataModel *> *> *)datasArray{
     if (!_datasArray) {
         _datasArray = @[
-            @[[KKMineCellDataModel modelWithleftLabel:@"设置" imgName:@"Mine_setUp"]],
-            @[[KKMineCellDataModel modelWithleftLabel:@"朋友圈" imgName:@"Mine_friendCircle"]]
+                @[[KKFindDataModel modelWithLeftLabel:@"朋友圈" rightImg:@"AddressBook_headImg5" leftImg:@"Find_FirendCircle"]],
+                @[[KKFindDataModel modelWithLeftLabel:@"扫一扫" rightImg:@"AddressBook_headImg5" leftImg:@"Find_checkCode"]]
         ];
     }
     return _datasArray;

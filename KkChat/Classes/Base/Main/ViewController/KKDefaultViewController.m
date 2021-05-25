@@ -8,7 +8,7 @@
 #import "KKDefaultViewController.h"
 #import "KKChatViewController.h" //聊天页面
 #import "KKAddressBookViewController.h" //通讯录页面
-#import "KKCircleFriendViewController.h" //朋友圈页面
+#import "KKFindViewController.h"//发现页面
 #import "KKMineViewController.h" //我的页面
 
 
@@ -90,8 +90,8 @@
     KKAddressBookViewController *addressBookVc = [[KKAddressBookViewController alloc] init];
     [self addTheChildVc:addressBookVc title:@"通讯录" imageName:@"1" selectedImageName:@"1"];
     
-    KKCircleFriendViewController *circleFriendVc =[[KKCircleFriendViewController alloc] init];
-    [self addTheChildVc:circleFriendVc title:@"发现" imageName:@"1" selectedImageName:@"1"];
+    KKFindViewController *findVc =[[KKFindViewController alloc] init];
+    [self addTheChildVc:findVc title:@"发现" imageName:@"1" selectedImageName:@"1"];
     
     KKMineViewController *mineVc = [[KKMineViewController alloc] init];
     [self addTheChildVc:mineVc title:@"我" imageName:@"1" selectedImageName:@"1"];
